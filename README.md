@@ -1,3 +1,5 @@
+# Apresentação das tabelas de respostas para cada linha de comando SQL, referente a resolução das questões do arquivo pdf disponivel neste repositório.
+
 ### Questão 01
 ```sql
 SELECT * FROM tabela_paises;
