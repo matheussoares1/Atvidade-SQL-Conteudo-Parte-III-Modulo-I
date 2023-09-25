@@ -608,18 +608,38 @@ VALUES
   ('United States','Montana','Helena','Angela Perkins','(421) 364-5533'),
   ('Italy','Sicilia','Chiusa Sclafani','Harriet Grimes','1-393-445-8676');
   
-  
+--RESOLUÇÃO QUESTÃO 01--
+SELECT * FROM tabela_paises;
 
-/* Questão 01*/
-  SELECT * FROM tabela_paises;
-  
-/* Questão 02*/
-  SELECT pais, cidade FROM tabela_paises WHERE pais = 'Brazil';
-  
-/* Questão 03*/
-  SELECT regiao, cidade FROM tabela_paises WHERE regiao = 'Ceará';
-  
-/* Questão 04*/
-  SELECT COUNT(regiao) AS China FROM tabela_paises WHERE pais = 'China' GROUP BY pais;
-  
- 
+--RESOLUÇÃO QUESTÃO 02--
+SELECT paises, CIDADE FROM tabela_paises WHERE pais = 'brazil';
+
+--RESOLUÇÃO QUESTÃO 03--
+SELECT pais, regiao, cidade FROM tabela_paises WHERE regiao = 'ceará';
+
+--RESOLUÇÃO QUESTÃO 04--
+SELECT COUNT(regiao) AS total_regioes FROM tabela_paises WHERE pais = 'china' 
+GROUP BY pais;
+
+--RESOLUÇÃO QUESTÃO 05--
+SELECT COUNT(regiao) AS total_regioes FROM tabela_paises WHERE pais = 'canadá' GROUP BY pais;
+
+--RESOLUÇÃO QUESTÃO 06--
+SELECT COUNT(pais) AS total_regioes FROM tabela_paises GROUP BY pais;
+
+--RESOLUÇÃO QUESTÃO 07--
+SELECT COUNT(DISTINCT cidade) FROM tabela_paises WHERE pais = 'Brazil';
+
+--RESOLUÇÃO QUESTÃO 08--
+SELECT pais, COUNT(pais) AS TOTAL_REGIOES FROM tabela_paises GROUP BY pais;
+
+--QUESTÃO 09--
+SELECT COUNT(nome) FROM tabela_paises WHERE nome LIKE 'João%';
+
+--RESOLUÇÃO QUESTÃO 10--
+SELECT COUNT(nome) FROM tabela_paises WHERE nome = 'Jhon';
+
+--RESOLUÇÃO QUESTÃO 11--
+SELECT DISTINCT pais FROM tabela_paises ORDER BY pais ASC;
+
+
