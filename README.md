@@ -55,3 +55,6 @@ SELECT COUNT(nome) FROM tabela_paises WHERE nome LIKE 'Jhon'
 SELECT DISTINCT pais FROM tabela_paises ORDER BY pais ASC;
 ```
 ![image](https://github.com/matheussoares1/Atvidade-SQL-Conteudo-Parte-III-Modulo-I/assets/111543203/be7f5e6d-4fe7-4c32-9d8f-bce4d45158e4)
+
+
+> _postgre code
